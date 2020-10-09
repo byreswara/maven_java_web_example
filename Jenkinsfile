@@ -35,7 +35,7 @@ pipeline {
 	  */
 	   stage("jacoco") {
             steps {
-		jacoco execPattern: '**/**.class'
+		jacoco execPattern: '**/**.class',  runAlways: true
 	    }
 	  }
 		
